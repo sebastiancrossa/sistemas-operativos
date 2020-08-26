@@ -1,6 +1,6 @@
 # Práctica 1 - Syscall to exit
 
-Ésta práctica implementa la funcionalidad de apagar el sistema operativo mediante una llamada al sistema.
+Esta práctica implementa la funcionalidad de apagar el sistema operativo mediante una llamada al sistema.
 
 Para probar al funcionalidad, correr
 ```bash
