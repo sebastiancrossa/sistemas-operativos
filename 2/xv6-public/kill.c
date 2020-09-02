@@ -11,6 +11,13 @@ main(int argc, char **argv)
     printf(2, "usage: kill pid...\n");
     exit();
   }
+
+  // making sure that we can't kill the init process
+  if (atoi(argv[1]) == 1) { 
+    printf(2, "error: can't kill init process...\n");
+    exit();
+  }
+
   for(i=1; i<argc; i++)
     kill(atoi(argv[i]));
   exit();
