@@ -10,7 +10,7 @@ int main(int argc, char *argv[]) {
 
     if (pid == 0) {
         char *newargv[] = { NULL };
-        char *newargve[]={ NULL };
+        char *newargve[]= { NULL };
 
         newargv[0] = argv[1];
 
