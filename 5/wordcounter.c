@@ -18,6 +18,10 @@ int main() {
             nBytes += 1;
             i += 1;
         } else {
+            if (c == '\n') {
+                nLines += 1;
+            }
+
             buffer[i] = '\0';
             nWords += atoi(buffer);
             i = 0;
@@ -29,6 +33,6 @@ int main() {
     nWords += atoi(buffer);
     i = 0;
 
-    printf("%u\n", nWords);
+    printf("Number of Lines: %u, Number of  Words: %u, Number of Bytes: %u\n", nLines, nWords, nBytes);
     return 0;
 }
